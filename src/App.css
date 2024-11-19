@@ -1,38 +1,370 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: #FAFAFA;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  margin-left: 140px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo {
+  width: 83.5px;
+  height: 26.58px;
+  margin-top: 33px;
+  margin-left: 42px;
+  margin-right: 50px;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.links button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #686868;
+  margin-right: 25px;
+}
+
+.links button:hover {
+  color: #151515;
+  cursor: pointer;
+}
+
+.links img{
+  width: 8px;
+  height: 4px;
+  margin-left: 6px;
+}
+
+.login {
+  margin-left: 700px;
+}
+
+.register button{
+  border: 2px solid #686868;
+  border-radius: 10px;
+  width: 104px;
+  height: 42px;
+}
+
+/* Hero Section */
+.heroSection {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+@media (min-width: 768px) {
+  .hero-images {
+    width: 480px;
+    height: 640px;
+    margin-top: 50px;
+    margin-left: 100px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heroBody {
+  margin-left: 300px;
+  margin-right: 100px;
+  margin-top: 150px;
+}
+
+.heroBody h2 {
+  width: 540px;
+  font-size: 80px;
+  font-weight: bold;
+  color: #151515;
+}
+
+.heroBody p {
+  width: 445px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #686868;
+  margin-top: -50px;
+}
+
+.heroBody button {
+  width: 163px;
+  height: 56px;
+  background-color: #151515;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FAFAFA;
+  border: none;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.heroBody button:hover {
+  background-color: #ffffff;
+  border: 2px solid #151515;
+  color: #151515;
+  cursor: pointer;
+}
+
+.affiliates {
+  width: 477.63px;
+  height: 35.9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.databiz {
+  width: 113.14px;
+  height: 20px;
+}
+
+.audiophile {
+  width: 73px;
+  height: 35.9px;
+}
+
+.meet {
+  width: 89.31px;
+  height: 20px;
+}
+
+.maker {
+  width: 82.01px;
+  height: 24px;
+}
+
+.menu {
+  display: none;
+}
+
+.features-dropdown {
+  position: absolute;
+  list-style: none;
+  background-color: #FFFFFF;
+  width: 153px;
+  height: 140px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 20px;
+  margin-left: -110px;
+  color: #686868;
 }
 
-.App-link {
-  color: #61dafb;
+.features-dropdown li {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.features-dropdown img {
+  width: 14px;
+  height: 16px;
 }
+
+.company-dropdown {
+  list-style: none;
+  background-color: #FFFFFF;
+  width: 116px;
+  height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  position: absolute;
+  color: #686868;
+  margin-top: 20px;
+}
+
+.company-dropdown li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  
+  .menu{
+    display: contents;
+  }
+
+  .menu button {
+    background-color: #FAFAFA;
+    border: none;
+    position: absolute;
+    top: 60px;
+    left: 350px;
+    z-index: 1;
+  }
+
+  .navbar {
+    margin-left: -15px;
+    margin-top: 30px;
+  }
+
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-images {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .heroBody {
+    margin-left: 0px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .heroBody h2 {
+    font-size: 36px;
+    width: 343px;
+    margin-left: 15px;
+  }
+
+  .heroBody p{
+    width: 343px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+
+  .heroBody button {
+    width: 136px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+
+  .affiliates {
+    width: 343px;
+    height: 26px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .databiz {
+    width: 81.25px;
+    height: 14.36px;
+  }
+
+  .audiophile {
+    width: 52.87px;
+    height: 26px;
+  }
+
+  .meet {
+    width: 64.14px;
+    height: 14.36px;
+  }
+
+  .maker {
+    width: 48.9px;
+    height: 17.23px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .links.open {
+    background-color: #FFFFFF;
+    width: 240px;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -20px;
+    left: 122px;
+    overflow: hidden;
+  }
+
+  .links button {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .features {
+    margin-top: 100px;
+  }
+
+  .careers button{
+    margin-left: -30px;
+  }
+
+  .about button {
+    margin-left: -40px;
+  }
+
+  .links div {
+    margin-left: -50px;
+  }
+
+  .login {
+    margin-top: 50px;
+  }
+
+  .login button {
+    margin-left: 70px;
+    color: #686868;
+    font-weight: 200;
+  }
+
+  .register button {
+    width: 195px;
+    height: 42px;
+    border: 2px solid #686868;
+    color: #686868;
+    font-weight: 200;
+    margin-left: 75px;
+  }
+
+  .features-dropdown {
+    list-style: none;
+    color: #686868;
+    font-size: 16px;
+    margin-left: -30px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+
+  .features-dropdown li{
+    margin-bottom: 10px;
+  }
+
+  .features-dropdown img {
+    width: 17.5px;
+    height: 20px;
+    margin-right: 15px;
+  }
+
+  .company-dropdown {
+    list-style: none;
+    color: #686868;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+
+  .company-dropdown li {
+    margin-bottom: 10px;
+    margin-left: -10px;
+
+  }
+  
+
+
+
+  
+}
+
